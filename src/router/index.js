@@ -25,6 +25,7 @@ const routes = [
         name: 'EventLayout',
         props: true,
         component: EventLayout,
+        // Nested routes will have the /:id added and have their respective paths appeneded 'i.e. /:id/register'
         children: [
             {
                 path: '',
