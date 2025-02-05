@@ -22,6 +22,7 @@ onMounted(() => {
     <div v-if="event">
         <h1>{{ event.title }}</h1>
         <div id="nav">
+            <!-- Because these routes are nest routes, the :id param will be passed and reflected in the URL when the links are clicked -->
             <router-link :to="{ name: 'EventDetails' }">Details</router-link>
             |
             <router-link :to="{ name: 'EventRegister' }">Register</router-link>
